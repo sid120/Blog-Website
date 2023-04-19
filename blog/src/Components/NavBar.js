@@ -7,6 +7,8 @@ import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 
 
+
+
 export const NavBar = ()=>{
     const[activeLink,setActiveLink] = useState('home');
     const[scrolled,setScrolled] = useState(false); 
@@ -42,7 +44,7 @@ const onUpdateActivate = (value)=>{
             <Nav className="me-auto">
             <Nav.Link href="#home" className = {activeLink  === 'home' ? 'activate navbar-link' : 'navbar-link'} onClick={()=> onUpdateActivate('home')} >Home</Nav.Link>
             <Nav.Link href="#skills" className = {activeLink  === 'skills' ? 'activate navbar-link' : 'navbar-link'} onClick={()=> onUpdateActivate('skills')}>Skills</Nav.Link>
-            <Nav.Link href="#blogs" className = {activeLink  === 'Blogs' ? 'activate navbar-link' : 'navbar-link'} onClick={()=> onUpdateActivate('blogs')}>Blogs</Nav.Link>
+            <Nav.Link href="#project" className = {activeLink  === 'project' ? 'activate navbar-link' : 'navbar-link'} onClick={()=> onUpdateActivate('project')}>Blogs</Nav.Link>
             </Nav>
             <span className='navbar-text'>
                 <div className='social-icon'>
